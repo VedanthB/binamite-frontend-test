@@ -1,4 +1,5 @@
-import Landing from "./Landing";
+import SignUp from "./Signup";
+import Login from "./Login";
 import Profile from "./Profile";
 
-export { Landing, Profile };
+export { SignUp, Profile, Login };

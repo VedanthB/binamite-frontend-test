@@ -1,11 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Landing, Profile } from "../pages";
+import { Login, Profile, SignUp } from "../pages";
 
 const WebsiteRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Landing />}></Route>
+      <Route path="/" element={<SignUp />}></Route>
+      <Route path="/login" element={<Login />}></Route>
+
       <Route path="/profile" element={<Profile />}></Route>
     </Routes>
   );
