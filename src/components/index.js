@@ -4,6 +4,7 @@ import SignupForm from "./Auth/SignupForm";
 import Input from "./global/Input";
 import ProfileNavigation from "./Profile/ProfileNavigation";
 import ProfileLayout from "./Profile/ProfileLayout";
+import Drawer from "./Profile/drawer/Drawer";
 
 export {
   Header,
@@ -12,4 +13,5 @@ export {
   Input,
   ProfileNavigation,
   ProfileLayout,
+  Drawer,
 };

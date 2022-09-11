@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Avatar from "../../global/Avatar";
+import Drawer from "../drawer/Drawer";
 
 const ProfileDetailsCard = () => {
+  const [isEditDrawerOpen, setIsEditDrawerOpen] = useState(false);
+
   return (
     <div className="w-full bg-white rounded-2xl p-8">
       <div className="flex justify-between items-center">
         <h5 className="font-semibold text-xl"> Profile </h5>
 
-        <div>Manage</div>
+        <button onClick={() => setIsEditDrawerOpen(true)}>Manage</button>
       </div>
 
       <div className="flex w-full mt-6">
@@ -33,6 +36,8 @@ const ProfileDetailsCard = () => {
           </div>
         </div>
       </div>
+
+      <Drawer open={isEditDrawerOpen} setOpen={setIsEditDrawerOpen} />
     </div>
   );
 };
