@@ -8,8 +8,16 @@ const TaxIdentificationCard = () => {
       </div>
 
       <div className="flex flex-col w-full mt-6 gap-4">
-        <ListItem label="Timezone" value="Address" />
-        <ListItem label="Address" value="Address" />
+        <p className="mb-2"> A Primary account number is required (PAN) </p>
+        <ListItem
+          label="Legal taxpayer name"
+          value="Octaloop Technologies Private Limited."
+        />
+        <ListItem label="PAN Number" value="12327763772" />
+
+        <button className="max-w-fit bg-[#574AE2] text-white py-2 px-4 text-sm rounded-3xl ">
+          Verify Now
+        </button>
       </div>
     </div>
   );

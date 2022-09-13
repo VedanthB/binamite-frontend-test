@@ -10,7 +10,12 @@ const ProfileDetailsCard = () => {
       <div className="flex justify-between items-center">
         <h5 className="font-semibold text-xl"> Profile </h5>
 
-        <button onClick={() => setIsEditDrawerOpen(true)}>Manage</button>
+        <button
+          className="text-[#574AE2]"
+          onClick={() => setIsEditDrawerOpen(true)}
+        >
+          Manage
+        </button>
       </div>
 
       <div className="flex w-full mt-6">

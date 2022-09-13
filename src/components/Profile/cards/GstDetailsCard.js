@@ -1,23 +1,24 @@
 import React from "react";
 
-const AddressCard = () => {
+const GstDetailsCard = () => {
   return (
     <div className="w-full bg-white rounded-2xl p-8">
-      <div className="flex justify-between items-center">
-        <h5 className="font-semibold text-xl"> Address Location </h5>
-
-        <button className="text-[#574AE2]">Manage</button>
+      <div className="flex justify-start items-center">
+        <h5 className="font-semibold text-xl"> GST IN (ID) </h5>
       </div>
 
       <div className="flex flex-col w-full mt-6 gap-4">
-        <ListItem label="Timezone" value="Address" />
-        <ListItem label="Address" value="Address" />
+        <p className="mb-2">
+          {" "}
+          A GST IN is required to foo bar foo bar bar foo{" "}
+        </p>
+        <ListItem label="GST IN" value="1233232333434" />
       </div>
     </div>
   );
 };
 
-export default AddressCard;
+export default GstDetailsCard;
 
 const ListItem = ({ label, value }) => {
   return (

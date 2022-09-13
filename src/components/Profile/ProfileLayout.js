@@ -1,5 +1,6 @@
 import React from "react";
 import AddressCard from "./cards/AddressCard";
+import GstDetailsCard from "./cards/GstDetailsCard";
 import ProfileDetailsCard from "./cards/ProfileDetailsCard";
 import TaxIdentificationCard from "./cards/TaxIdentificationCard";
 
@@ -15,11 +16,9 @@ const ProfileLayout = () => {
         </div>
         <div className="flex flex-col h-full min-h-screen w-full gap-6">
           <TaxIdentificationCard />
-          <TaxIdentificationCard />
-
-          <TaxIdentificationCard />
-
-          <TaxIdentificationCard />
+          <GstDetailsCard />
+          <GstDetailsCard />
+          <GstDetailsCard />
         </div>
       </div>
     </div>
