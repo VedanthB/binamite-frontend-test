@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Avatar from "../../global/Avatar";
+import Avatar from "../../Global/Avatar";
 import Drawer from "../drawer/Drawer";
 
 const ProfileDetailsCard = () => {
